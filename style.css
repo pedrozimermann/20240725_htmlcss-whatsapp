@@ -26,9 +26,9 @@ body {
 background-color: red;
 }
 
-.main-container .mc-left header{
+.main-container .mc-left header img{
 
-background-color: #dadbd5;
+width: 100px;
 
 }
 
