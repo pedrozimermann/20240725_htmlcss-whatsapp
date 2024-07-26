@@ -14,16 +14,29 @@ body {
 }
 
 .main-container{
+    display: flex;
     height: 90%;
-    max-width: 960px;
+    max-width: 1000px;
     background-color: #ffffff;
 }
 
 .main-container .mc-left{
+    height: 100%;
+    width: 320px;
 background-color: red;
 }
 
+.main-container .mc-left header{
+
+background-color: #dadbd5;
+
+}
+
+
+
 
 .main-container .mc-right{
+    flex: 1;
+    height: 100%;
     background-color: green;
     }
