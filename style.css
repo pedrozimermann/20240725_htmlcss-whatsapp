@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+html, body{
+    height: 100%;
+
+}
+
+body {
+    background-color: #dadbd5;
+    
+}
+
+.main-container{
+    height: 90%;
+    max-width: 960px;
+    background-color: #ffffff;
+}
+
+.main-container .mc-left{
+background-color: red;
+}
+
+
+.main-container .mc-right{
+    background-color: green;
+    }
