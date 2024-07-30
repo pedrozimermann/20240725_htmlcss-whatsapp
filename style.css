@@ -102,10 +102,7 @@ cursor: pointer;
     border-radius: 50px;
     height: 50px;
 }
-.main-container .mc-left .users-container .user .image-infos .infos{
 
-
-}
 .main-container .mc-left .users-container .user .image-infos .name{
 font-weight: 700;
 
@@ -123,8 +120,48 @@ font-weight: 700;
 color: #666;
 
 }
+
+
 .main-container .mc-right {
     flex: 1;
     height: 100%;
     background-color: green;
+}
+
+.main-container .mc-right header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eeeeee;
+    padding: 15px;
+}
+
+.main-container .mc-right header .icons {
+    display: flex;
+    font-size: 35px;
+    align-items: center;
+    color: #767676;
+    column-gap: 15px;
+}
+
+.main-container header .image-infos {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.main-container header .image-infos img {
+    width: 50px;
+    border-radius: 50px;
+    height: 50px;
+}
+
+.main-container header .image-infos .name{
+font-weight: 700;
+
+}
+
+.main-container header .image-infos .message{
+    color: 666;
+    font-size: 14px;
+
 }
