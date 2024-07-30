@@ -81,8 +81,10 @@ body {
     justify-content: space-between;
 }
 
-.main-container .mc-left .users-container .user .image-infos {
-    background-color: red;
+.main-container .mc-left .users-container .user .image-infos{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
 }
 
 .main-container .mc-left .users-container .user .image-infos img {
@@ -92,5 +94,6 @@ body {
 }
 
 .main-container .mc-left .users-container .user .date {
-    background-color: green;
+display: flex;
+align-items: center;
 }
