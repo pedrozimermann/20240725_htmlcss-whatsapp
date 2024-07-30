@@ -6,11 +6,11 @@
 html,
 body {
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: #dadbd5;
-
 }
 
 .main-container {
@@ -22,46 +22,39 @@ body {
 
 .main-container .mc-left {
     height: 100%;
-    width: 320px;
-    background-color: red;
     display: flex;
     flex-direction: column;
+    width: 380px;
+    background-color: red;
 }
 
 .main-container .mc-left header {
     display: flex;
     justify-content: space-between;
     background-color: #eeeeee;
-    padding: 12px;
-}
-
-.main-container .mc-left header img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-}
-
-.main-container .mc-right {
-    flex: 1;
-    height: 100%;
-    background-color: green;
+    padding: 15px;
 }
 
 .main-container .mc-left header .icons {
     display: flex;
-    align-items: center;
     font-size: 35px;
+    align-items: center;
     color: #767676;
     column-gap: 15px;
+}
+
+.main-container .mc-left header img {
+    width: 50px;
+    border-radius: 50px;
 }
 
 .main-container .mc-left .search {
     background-color: #ffffff;
     display: flex;
-    padding: 15px;
-    column-gap: 15px;
     align-items: center;
-    border-bottom: 1px solid #eeeeee;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    column-gap: 15px;
 }
 
 .main-container .mc-left .search input {
@@ -71,17 +64,34 @@ body {
     outline: 0;
 }
 
-.main-container .mc-left .users-container {
+.main-container .mc-left .users {
     background-color: #ffffff;
     flex: 1;
 }
 
+.main-container .mc-left .users-container {
+    flex: 1;
+    background-color: #ffffff;
+
+}
+
 .main-container .mc-left .users-container .user {
+    padding: 15px;
     display: flex;
     justify-content: space-between;
 }
 
-.main-container .mc-left .users-container .user .image-infos{
+.main-container .mc-left .users-container .user.user:hover{
+background-color: #f1f1f1;
+cursor: pointer;
+}
+
+.main-container .mc-left .users-container .user .date {
+    display: flex;
+    align-items: center;
+}
+
+.main-container .mc-left .users-container .user .image-infos {
     display: flex;
     align-items: center;
     column-gap: 8px;
@@ -89,11 +99,32 @@ body {
 
 .main-container .mc-left .users-container .user .image-infos img {
     width: 50px;
-    height: 50px;
     border-radius: 50px;
+    height: 50px;
+}
+.main-container .mc-left .users-container .user .image-infos .infos{
+
+
+}
+.main-container .mc-left .users-container .user .image-infos .name{
+font-weight: 700;
+
 }
 
-.main-container .mc-left .users-container .user .date {
-display: flex;
-align-items: center;
+.main-container .mc-left .users-container .user .image-infos .message{
+    color: 666;
+    font-size: 14px;
+
+}
+.main-container .mc-left .users-container .user .image-infos .date{
+    align-items: center;
+    font-size: 14px;
+    display: flex;
+color: #666;
+
+}
+.main-container .mc-right {
+    flex: 1;
+    height: 100%;
+    background-color: green;
 }
