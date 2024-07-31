@@ -212,7 +212,7 @@ font-weight: 700;
 }
 
 .main-container .mc-right .messages-container .message span::after{
- content: 'Seila';   
+ content: attr(data-time);   
  font: 13px;
  color: #767676;
  position: absolute;
