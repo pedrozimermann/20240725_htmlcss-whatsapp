@@ -10,14 +10,22 @@ body {
 }
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #dadbd5;
+
 }
 
 .main-container {
+    overflow: hidden;
     display: flex;
     height: 90%;
     max-width: 1000px;
     background-color: #ffffff;
+    flex-grow: 1;
+    box-shadow: 0px 0px 12px -5px rgba(0, 0, 0, 1);
+    border-radius: 5px;
 }
 
 .main-container .mc-left {
@@ -123,6 +131,8 @@ color: #666;
 
 
 .main-container .mc-right {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     height: 100%;
     background-color: green;
@@ -157,11 +167,71 @@ color: #666;
 
 .main-container header .image-infos .name{
 font-weight: 700;
-
 }
 
 .main-container header .image-infos .message{
     color: 666;
     font-size: 14px;
+}
+
+.main-container .mc-right .messages-container{
+    background-color: #e3dbd8 ;
+    padding: 15px;
+    flex: 1;
+
+}
+
+.main-container .mc-right .messages-container .date{
+   display: flex;
+   justify-content: center;
+}
+
+.main-container .mc-right .messages-container .date span{
+    background-color: #e8f1f9;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.main-container .mc-right .messages-container .message{
+    margin-top: 10px;
+    display: flex;
+
+}
+
+.main-container .mc-right .messages-container .message span{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    max-width: 280px;
+    min-width: 100px;
+    word-break: break-word;
+}
+
+.main-container .mc-right .messages-container .message.message-right {
+   justify-content: flex-end;
+    
+}
+
+.main-container .mc-right .messages-container .message.message-right span{
+    background-color: #e1ffc4;
+}
+
+
+.main-container .mc-right footer{
+display: flex;
+padding: 15px;
+background-color: #eee;
+justify-content: space-between;
+align-items: center;
+column-gap: 10px;
+}
+
+.main-container .mc-right footer input{
+    flex: 1;
+    padding: 8px;
+    border: 0;
+    outline: 0;
 
 }
