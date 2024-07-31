@@ -193,20 +193,31 @@ font-weight: 700;
     border-radius: 5px;
 }
 
+
+
 .main-container .mc-right .messages-container .message{
     margin-top: 10px;
     display: flex;
-
 }
 
 .main-container .mc-right .messages-container .message span{
     display: inline-block;
-    padding: 10px;
+    padding: 10px 10px 22px 10px;
     border-radius: 5px;
     background-color: #ffffff;
     max-width: 280px;
     min-width: 100px;
     word-break: break-word;
+    position: relative;
+}
+
+.main-container .mc-right .messages-container .message span::after{
+ content: 'Seila';   
+ font: 13px;
+ color: #767676;
+ position: absolute;
+ bottom: 4px;
+ right:10px; 
 }
 
 .main-container .mc-right .messages-container .message.message-right {
